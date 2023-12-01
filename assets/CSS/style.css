@@ -1,5 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+
+html{
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+img{
+    display: block;
+}
+
+/* utility classes */
+.container-l{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* header elements */
+header{
+    background-color:#0084FD;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul:last-of-type{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+header nav #logo{
+    padding-block: 1rem;
+}
+
+/* nav buttons */
+.nav-btn{
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    padding:0.5rem 0.6rem 0.5rem 0.6rem;
+}
+.nav-burger{
+    font-size: 2rem; 
+}
+
+/* second list not visible */
+header nav ul:last-of-type li:not(header nav ul:last-of-type li:last-of-type){
+    display: none;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+    /* navbar elements */
+    .nav-burger{
+        display: none; 
+    }
+
+    header nav ul:last-of-type li:not(header nav ul:last-of-type li:last-of-type){
+        display: block;
+    }
 }
