@@ -97,15 +97,14 @@ main section#cta{
 section#cta div.container{
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
-    gap: 2em;
+    gap: 1em;
 }
 
 
 section#cta .box-cta{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     
     background-color: #B5DDFF;
     border-radius: 20px;
@@ -141,13 +140,13 @@ i.fa-apple{
 }
 
 section#cta .box-cta figure{
-    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 section#cta .box-cta figure img{
-    width: 85%;
+    width: 100%;
 }
 section#cta .box-cta figure i{
     color: #0084FD;
@@ -156,15 +155,109 @@ section#cta .box-cta figure i{
 
 
 /* MEDIA QUERIES */
+/* tablet */
+@media screen and (min-width: 482px){
+    /* container + first section */
+    .container{
+        width: 90%;
+    }
+    section#cta div.container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
-@media screen and (min-width: 1220px) {
-    /* navbar elements */
+    section#cta div.box-cta{
+        width: calc((100% / 3) - 1em + (1em / 3));
+    }
+    section#cta div.big-box{
+        width: calc((100% / 2) - 1em + (1em / 2));
+        flex-grow: 1;
+    }
+
+    section#cta .box-cta .info-cta h2{
+        font-size: 1.5rem;
+    }
+
+    section#cta .box-cta .info-cta p{
+        font-size: 1rem;
+    }
+    
+    section#cta .box-cta figure img{
+        width: 70%;
+    }
+
+    section#cta .big-box figure{
+        width: 100%;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    section#cta .box-cta .info-cta a.btn{
+        align-self: flex-start;
+    }
+
+    section#cta .big-box .info-cta{        
+        text-align: left;
+    }
+
+    section#cta .box-cta figure i{
+        font-size: 5rem;
+    }
+
+}
+
+@media screen and (min-width: 769px) {
+
+    /* nav burger element */
     .nav-burger{
         display: none; 
     }
-
+    
     header nav ul:last-of-type li:not(header nav ul:last-of-type li:last-of-type){
         display: block;
     }
+    /* container + first section */
+    .container{
+        width: 80%;
+    }
+    section#cta div.big-box{
+        gap: 0;
+        flex-direction: row;
+    }
+    
+    section#cta .big-box .info-cta{
+        width: 50%;
+    }
+    section#cta .big-box figure{
+        width: 50%;
+    }
+
+    section#cta .box-cta figure img{
+        width: 100%;
+        align-self: flex-end;
+    }
+    
+    section#cta .box-cta .info-cta h2{
+        font-size: 1.2rem;
+    }
+
+    section#cta .box-cta .info-cta p{
+        font-size: 1rem;
+    }
+    section#cta .box-cta a{
+        font-size: 0.9rem;
+    }
+
+
 }
+
+
+@media screen and (min-width: 1200px){
+    .container{
+        width: 1200px;
+    }
+}
+
 
