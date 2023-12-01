@@ -21,7 +21,9 @@ img{
     display: block;
 }
 
-
+:root{
+    --purple: #9792E4;
+}
 /* utility classes */
 .container{
     width: 80%;
@@ -129,7 +131,7 @@ section#cta .box-cta .info-cta{
 
 section#cta .box-cta .info-cta h2{
     color: #0084FD;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 section#cta .box-cta .info-cta p{
@@ -166,13 +168,13 @@ section#cta .box-cta figure i{
 /* second section - planning */
 section#planning{
     padding-block: 80px;
-    background-color: #9792E4;
+    background-color: var(--purple);
 }
 
 section#planning div.container{
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 1.5em;
 }
 
 section#planning .col{
@@ -182,10 +184,12 @@ section#planning .col{
 section#planning .col h2{
     padding-block: 2em;
     font-size: 2rem;
+    text-align: center;
 }
 
 section#planning .col p{
     font-size: 1.2rem;
+    text-align: center;
 
 }
 
@@ -207,7 +211,7 @@ section#planning .col .card{
 }
 
 section#planning .col .card a i{
-    background-color: #9792E4;
+    background-color: var(--purple);
     padding: 1em 1.1em 1em 1.1em;
     border-radius: 50%;
 }
@@ -239,6 +243,7 @@ section#testimonials .container{
 
 section#testimonials .container h2{
     font-size: 2.2rem;
+    color: var(--purple);
 }
 section#testimonials .container h3{
     text-transform: uppercase;
@@ -257,7 +262,7 @@ section#testimonials .container .card{
     align-items: center;
     gap: 1em;
 
-    background-color: #9792E4;
+    background-color: var(--purple);
     border-radius: 50px;
     padding: 2em 1em 2em 1em;
 }
@@ -272,7 +277,7 @@ q{
     font-size: 1.3rem;
 }
 
-.photo-testimonial{
+.circle-photo{
     width: 65%;
     aspect-ratio: 1;
     background-repeat: no-repeat;
@@ -289,6 +294,103 @@ q{
 .third{
     background-image: url(../img/testimonial3.jpg);
 }
+/* -------------------------------------------------- */
+
+/* fourth section - features / benefits */
+section#features{
+    padding-bottom: 80px;
+    background-color: var(--purple);
+}
+section#features .container > h2{
+    font-size: 2.5rem;
+    text-align: center;
+    padding-block: 80px;
+}
+
+section#features .container .flex-c .card{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+
+    padding: 2em;
+    background-color: white;
+    border-radius: 20px;
+}
+
+section#features .container .flex-c .card h2,
+section#features .container .flex-c .card h3{
+    color: var(--purple);
+}
+
+section#features .container .flex-c .card h2{
+    font-size: 3rem;
+}
+section#features .container .flex-c .card h3{
+    font-size: 1.6rem;
+}
+section#features .container .flex-c .card a{
+    background-color: var(--purple);
+    align-self: flex-start;
+}
+
+section#features .container .flex-c{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+/* fifth section - about us */
+.about-us-guy{
+    background-image: url(../img/about.jpg);
+}
+section#about-us{
+    padding-block: 80px;
+}
+
+section#about-us .flex-c{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+section#about-us .flex-c h2{
+    color: var(--purple);
+    font-size: 2.8rem;
+}
+
+section#about-us .flex-c h3{
+    color: var(--purple);
+    font-size: 1.8rem;
+    line-height: 150%;
+}
+section#about-us .flex-c a{
+    background-color: var(--purple);
+    padding:10px 30px 10px 30px; 
+    align-self: flex-start;
+}
+
+section#about-us .flex-c .about-us-guy{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+section#about-us div.circle-photo q::after{
+    display: none;
+}
+section#about-us div.circle-photo{
+    width: 60%;
+}
+section#about-us div.circle-photo q::before{
+    font-size: 220px;
+    color: var(--purple);
+}
+
+
+
+
+
+
 
 /* MEDIA QUERIES */
 /* tablet */
