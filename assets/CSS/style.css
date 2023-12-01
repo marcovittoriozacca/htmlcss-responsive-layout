@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 
 
@@ -10,21 +11,37 @@ html{
     font-family: 'PT Sans', sans-serif;
 }
 
+p{
+    line-height: 180%;
+}
 
 img{
     display: block;
 }
 
 /* utility classes */
-.container-l{
+.container{
     width: 80%;
     margin: 0 auto;
+}
+
+.btn{
+    text-decoration: none;
+    border-radius: 20px;
+    padding:10px 60px 10px 60px; 
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.blue-bg{
+    background-color:#0084FD;
+    color: white;
 }
 
 /* header elements */
 header{
     background-color:#0084FD;
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 999;
 }
@@ -70,12 +87,77 @@ header nav ul:last-of-type li:not(header nav ul:last-of-type li:last-of-type){
     display: none;
 }
 
+/* cta section */
+main section#cta{
+    padding-top: 120px;   
+    padding-bottom: 80px;
+}
 
 
+section#cta div.container{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    gap: 2em;
+}
+
+
+section#cta .box-cta{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+    background-color: #B5DDFF;
+    border-radius: 20px;
+    width: 100%;
+}
+
+section#cta .box-cta .info-cta{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    
+    text-align: center;
+    padding: 2em;
+}
+
+section#cta .box-cta .info-cta h2{
+    color: #0084FD;
+    font-size: 2rem;
+}
+section#cta .box-cta .info-cta p{
+    color: #5F7487;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+section#cta .box-cta .info-cta a.btn{
+    align-self: center;
+}
+
+i.fa-apple{
+    margin-right: 10px;
+}
+
+section#cta .box-cta figure{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+section#cta .box-cta figure img{
+    width: 85%;
+}
+section#cta .box-cta figure i{
+    color: #0084FD;
+    font-size: 6rem;
+}
 
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 1220px) {
     /* navbar elements */
     .nav-burger{
         display: none; 
@@ -85,3 +167,4 @@ header nav ul:last-of-type li:not(header nav ul:last-of-type li:last-of-type){
         display: block;
     }
 }
+
