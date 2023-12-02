@@ -402,6 +402,60 @@ section#about-us div.circle-photo q::before{
     font-size: 15rem;
     color: var(--purple);
 }
+/* --------------------------------------------- */
+
+/* sixth section - get started */
+section#get-started{
+    background-color: var(--purple);
+    padding-block: 80px;
+    text-align: center;
+}
+section#get-started .flex-c{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8em;
+}
+section#get-started .flex-c h3{
+    font-size: 2rem;
+}
+.orange{
+    color: #FDC15F;
+    font-size: 4.5rem;
+}
+.start{
+    font-size: 1.3rem;
+    opacity: 0.6;
+}
+section#get-started a.btn{
+    background-color: white;
+    color: var(--purple);
+    padding: 20px 100px 20px 100px;
+    border-radius: 50px;
+    align-self: center;
+    font-size: 1.3rem;
+}
+
+section#get-started a.policy{
+    color: white;
+}
+
+/* --------------------------------------------- */
+
+footer{
+    background-color: #333333;
+    padding-block: 40px;
+
+}
+footer .container{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    text-align: center;
+}
+footer .container a{
+    color: #8C87D0;
+}
 
 
 
@@ -511,6 +565,7 @@ section#about-us div.circle-photo q::before{
     }
 
     /* fifth section - about us */
+
     section#about-us .flex-c{
         flex-direction: row;
         gap: 2em;
@@ -541,6 +596,22 @@ section#about-us div.circle-photo q::before{
         position: absolute;
         left:10rem;
         top: 5rem;
+    }
+
+    /* sixth section - get started */
+    section#get-started .container{
+        width: 65%;
+    }
+    section#get-started .flex-c h3{
+        font-size: 2.5rem;
+    }
+    .orange{
+        font-size: 5rem;
+    }
+
+    /* footer */
+    footer .container{
+        width: 50%;
     }
 }
 
@@ -636,6 +707,16 @@ section#about-us div.circle-photo q::before{
     section#about-us .flex-c p{
         font-size: 1.3rem;
         line-height: 200%;
+    }
+
+    /* get started */
+    section#get-started .container{
+        width: 768px;
+    }
+
+    /* footer */
+    footer .container{
+        width: 768px;
     }
     
 
