@@ -587,6 +587,59 @@ section#about-us div.circle-photo q::before{
     section#cta .box-cta a{
         font-size: 0.9rem;
     }
+
+    /* second section planning */
+    section#planning div.container{
+        width: 70%;
+        flex-direction: row; 
+        align-items: flex-end; 
+        gap:3em; 
+    }
+
+    section#planning .col h2{
+        padding:5.2em 0 2em 0;
+        font-size: 2rem;
+
+    }
+    section#planning .col p{
+        font-size: 1.1rem;    
+    }
+    /* third section - testimonials */
+    section#testimonials .container .card .card-text{
+        gap: 2em;
+    }
+    section#testimonials .container .card .card-text cite{
+        font-size: 1.3rem;
+    }
+
+    /* fourth section - features */
+    section#features .container .flex-c .card{
+        width: calc((100% / 3) - 2em + (2em / 3));
+    }
+    section#features .container .flex-c .card h2{
+        font-size: 3rem;
+    }
+
+    /* fifth section - about us */
+    section#about-us .flex-c .about-us-col:first-of-type{
+        width: 70%;
+    }
+    section#about-us .flex-c .about-us-col:last-of-type{
+        width: 30%;
+        padding-left: 1.5em;
+    }
+    
+    section#about-us .flex-c .about-us-guy{
+        width: 100%;
+    }
+
+    section#about-us .flex-c p{
+        font-size: 1.3rem;
+        line-height: 200%;
+    }
+    
+
+
 }
 
 
@@ -594,6 +647,21 @@ section#about-us div.circle-photo q::before{
     .container{
         width: 1200px;
     }
+    section#planning div.container{
+        width: 1000px;
+    }
+
+    .circle-photo{
+        width: 30%;
+    }
+    section#about-us div.circle-photo{
+        width: 70%;
+    }
+    
+    section#about-us .container{
+        width: 1000px;
+    }
+
 }
 
 
