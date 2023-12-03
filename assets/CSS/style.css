@@ -12,8 +12,7 @@ html{
 }
 
 p,
-cite,
-q{
+cite{
     line-height: 180%;
 }
 
@@ -273,15 +272,17 @@ section#testimonials .container .card .card-text{
 
 }
 
+i.fa-quote-left,
+i.fa-quote-right{
+    font-size: 1.3rem;
+    transform: translateY(-4px);
+}
+
 cite{
     font-style:normal;
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: bold;
-}
-
-q{
-    font-size: 1.3rem;
 }
 
 .circle-photo{
@@ -349,7 +350,6 @@ section#features .container .flex-c{
 }
 
 /* fifth section - about us */
-
 .about-us-guy{
     background-image: url(../img/about.jpg);
 }
@@ -387,21 +387,15 @@ section#about-us .flex-c a{
 }
 
 section#about-us .flex-c .about-us-guy{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    text-align: right;
+}
+section#about-us .flex-c .about-us-guy i{
+    color: var(--purple);
+    font-size: 4.8rem;
+    transform: translateY(-12px);
 }
 
-section#about-us div.circle-photo q::after{
-    display: none;
-}
-section#about-us div.circle-photo{
-    width: 60%;
-}
-section#about-us div.circle-photo q::before{
-    font-size: 15rem;
-    color: var(--purple);
-}
+
 /* --------------------------------------------- */
 
 /* sixth section - get started */
@@ -591,11 +585,6 @@ footer .container a{
     }
     section#about-us .flex-c .about-us-guy{
         position: relative;
-    }
-    section#about-us div.circle-photo q::before{
-        position: absolute;
-        left:10rem;
-        top: 5rem;
     }
 
     /* sixth section - get started */
