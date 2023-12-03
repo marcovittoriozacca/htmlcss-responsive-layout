@@ -9,6 +9,7 @@
 
 html{
     font-family: 'PT Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 p,
@@ -72,6 +73,8 @@ header nav ul:last-of-type{
     display: flex;
     gap: 2em;
     align-items: center;
+
+    position: relative;
 }
 
 header nav #logo{
@@ -86,11 +89,16 @@ header nav #logo{
     padding:0.5rem 0.6rem 0.5rem 0.6rem;
 }
 .nav-burger{
-    font-size: 2rem; 
+    font-size: 2rem;
+    color: white;
+}
+.nav-burger:hover{
+    cursor: pointer;
+    background-color: gray;
 }
 
 /* second list not visible */
-header nav ul:last-of-type li:not(header nav ul:last-of-type li:last-of-type){
+.hide{
     display: none;
 }
 
@@ -613,9 +621,10 @@ footer .container a{
         display: none; 
     }
     
-    header nav ul:last-of-type li:not(header nav ul:last-of-type li:last-of-type){
+    .hide{
         display: block;
     }
+    
     /* container + first section */
     .container{
         width: 80%;
